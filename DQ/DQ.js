@@ -1,13 +1,13 @@
-
+#!name=DQ小程序签到
+#!desc=
+#!homepage=
+#!author=
+#!icon=
 
 [Script]
-DQ点单小程序签到Cookie = type=http-request,requires-body=1,pattern=^https:\/\/wxxcx\.dairyqueen\.com\.cn\/UserXueLi\?_actionName=getXueLiSign,script-path=https://raw.githubusercontent.com/chouchoui/QuanX/master/Scripts/dq/dq.sign.js
-DQ点单小程序签到 = type=cron,cronexp="22 8,9 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/chouchoui/QuanX/master/Scripts/dq/dq.sign.js
 
-
-[MITM]
-hostname=*.dairyqueen.com.cn
-
+cron "1 0 * * *" script-path=https://raw.githubusercontent.com/chouchoui/QuanX/master/Scripts/dq/dq.sign.js, tag=DQ点单小程序签到 
+http-request ^https:\/\/wxxcx\.dairyqueen\.com\.cn\/UserXueLi\?_actionName=getXueLiSign script-path=https://raw.githubusercontent.com/chouchoui/QuanX/master/Scripts/dq/dq.sign.js,requires-body=1, tag=DQ点单小程序签到Cookie 
 
 *****************************************************************************
 const $ = new Env("DQ点单小程序签到");
