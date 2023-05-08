@@ -2,7 +2,7 @@
 #!desc=
 #!homepage=
 #!author=
-#!icon=
+#!icon=https://raw.githubusercontent.com/chouchoui/QuanX/master/Scripts/dq/dq.task.png
 
 [Script]
 
