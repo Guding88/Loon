@@ -1,5 +1,5 @@
 #!name=DQ小程序签到
-#!desc=DQ小程序00:01自动签到
+#!desc=
 #!homepage=
 #!author=
 #!icon=https://raw.githubusercontent.com/chouchoui/QuanX/master/Scripts/dq/dq.task.png
