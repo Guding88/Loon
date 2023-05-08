@@ -9,6 +9,9 @@
 cron "1 0 * * *" script-path=https://raw.githubusercontent.com/chouchoui/QuanX/master/Scripts/dq/dq.sign.js, tag=DQ点单小程序签到 
 http-request ^https:\/\/wxxcx\.dairyqueen\.com\.cn\/UserXueLi\?_actionName=getXueLiSign script-path=https://raw.githubusercontent.com/chouchoui/QuanX/master/Scripts/dq/dq.sign.js,requires-body=1, tag=DQ点单小程序签到Cookie 
 
+[MITM]
+hostname=*.dairyqueen.com.cn
+
 *****************************************************************************
 const $ = new Env("DQ点单小程序签到");
 $.url = "vei_dq_wechat_getSignUrl";
