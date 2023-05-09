@@ -1,8 +1,8 @@
 #!name= 隐藏IP
 #!desc= 针对部分网站显示IP归属地的分流规则
-#!author= 
+#!author= 改写自https://raw.githubusercontent.com/lwd-temp/anti-ip-attribution/main/generated/quantumultx.list
 #!homepage= 
-#!icon= 
+#!icon= https://raw.githubusercontent.com/Orz-3/mini/master/Color/XD.png
 
 [RULE]
 
