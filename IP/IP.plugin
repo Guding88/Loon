@@ -130,4 +130,4 @@ IP-CIDR,140.143.177.206/32,Proxy
 DOMAIN,api.xiaoheihe.cn,Proxy
 DOMAIN,y.qq.com,DIRECT
 DOMAIN-SUFFIX,y.qq.com,Proxy
-DOMAIN-SUFFIX,api.pipix.com,Proxy
+DOMAIN-SUFFIX,pipix.com,Proxy
