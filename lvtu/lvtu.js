@@ -14,7 +14,7 @@ let body = {
     "totalCashBalance" : 0,
     "userName" : "仅供测试使用",
     "userId" : "1",
-    "phoneNum" : "1",
+    "phoneNum" : "",
     "identityType" : 1,
     "cashBalance" : 0,
     "isShowBroadcast" : 0,
