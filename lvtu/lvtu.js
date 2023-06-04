@@ -13,7 +13,7 @@ let body = {
     "levDesc" : "无耻的破解会员",
     "totalCashBalance" : 0,
     "userName" : "仅供测试使用",
-    "userId" : "",
+    "userId" : "1",
     "phoneNum" : "",
     "identityType" : 1,
     "cashBalance" : 0,
