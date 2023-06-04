@@ -3,7 +3,7 @@ let body = {
   "message" : "success",
   "state" : 200,
   "content" : {
-    "headUrl" : "https:\/\/www.1314zhilv.com\/resources\/lxwalkman\/userLogo.png",
+    "headUrl" : null,
     "isMountSwitch" : 0,
     "isAnchor" : 1,
     "isSYGuidePopUp" : 1,
