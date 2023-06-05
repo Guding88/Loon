@@ -1,4 +1,4 @@
-var body = {
+let body = {
   "success" : true,
   "message" : "success",
   "state" : 200,
@@ -22,6 +22,6 @@ var body = {
     "isShowAppletDY" : 0,
     "isActivate" : 1
   }
-};
+}
 
 $done({ body: JSON.stringify(body) });
