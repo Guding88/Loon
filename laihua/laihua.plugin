@@ -1,0 +1,13 @@
+#!name = 来画
+#!desc = 解锁VIP
+#!openUrl = https://t.cn/A6ptiPqj
+#!author = chxm1023
+#!homepage = 
+#!icon = https://raw.githubusercontent.com/Guding88/iCon/main/laihua.png
+
+[Script]
+http-response ^https?:\/\/laipicapp\.laihua\.com\/session\/new script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/laihua.js, requires-body=true, timeout=10, tag=来画
+
+
+[MITM]
+hostname = laipicapp.laihua.com
