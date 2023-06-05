@@ -3,7 +3,7 @@ let body = {
   "message" : "success",
   "state" : 200,
   "content" : {
-    "headUrl" : null,
+    "headUrl" : "https://raw.githubusercontent.com/Guding88/iCon/main/Guding.png",
     "isMountSwitch" : 0,
     "isAnchor" : 1,
     "isSYGuidePopUp" : 1,
