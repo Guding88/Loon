@@ -12,7 +12,7 @@ let body = {
     "isShowGrey" : 0,
     "levDesc" : "无耻的破解会员",
     "totalCashBalance" : 0,
-    "userName" : "仅供测试使用",
+    "userName" : "骨钉",
     "userId" : "1",
     "phoneNum" : "",
     "identityType" : 1,
