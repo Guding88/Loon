@@ -9,7 +9,7 @@
 
 [Script]
 
-http-response ^https?://www.1314zhilv.com/ltsstnew/user/getInfo script-path=https://raw.githubusercontent.com/Guding88/Loon/main/lvtu/lvtu.js, response-body=true, timeout=10, tag=旅途随身听
+http-response ^https?://www.1314zhilv.com/ltsstnew/user/getInfo script-path=https://raw.githubusercontent.com/Guding88/Loon/main/lvtu/lvtu.js, requires-body=true, timeout=10, tag=旅途随身听
 
 
 [rewrite_local]
@@ -18,7 +18,7 @@ http-response ^https?://www.1314zhilv.com/ltsstnew/user/getInfo script-path=http
 
 
 [MITM]
-host = www.1314zhilv.com
+hostname = www.1314zhilv.com
 
 
 ********************************************
