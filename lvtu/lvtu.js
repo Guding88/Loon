@@ -1,3 +1,28 @@
+/*******************************************
+#!name = 旅途随身听
+#!desc = 破解内购
+#!openUrl = 
+#!author = 骨钉
+#!homepage = https://github.com/Guding88/Loon/tree/main/lvtu
+#!icon = https://raw.githubusercontent.com/Guding88/iCon/main/ltsst.png
+
+[Script]
+
+http-response ^https?://www.1314zhilv.com/ltsstnew/user/getInfo script-path=https://raw.githubusercontent.com/Guding88/Loon/main/lvtu/lvtu.js, requires-body=true, timeout=10, tag=旅途随身听
+
+
+[rewrite_local]
+
+^https?://www.1314zhilv.com/ltsstnew/user/getInfo url script-response-body https://raw.githubusercontent.com/Guding88/Loon/main/lvtu/lvtu.js
+
+
+[MITM]
+host = www.1314zhilv.com
+
+
+********************************************/
+
+
 let body = {
   "success" : true,
   "message" : "success",
