@@ -1,4 +1,7 @@
-let body = {
+var body = $response.body;
+var obj = JSON.parse(body);
+
+obj = {
   "success" : true,
   "message" : "success",
   "state" : 200,
@@ -21,7 +24,9 @@ let body = {
     "isShowShareBtn" : 0,
     "isShowAppletDY" : 0,
     "isActivate" : 1
-  }
+  
 }
 
-$done({ body: JSON.stringify(body) });
+  
+body = JSON.stringify(obj);
+$done({body});
