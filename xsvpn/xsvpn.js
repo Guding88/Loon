@@ -1,3 +1,22 @@
+
+/**********************************************
+脚本作者：骨钉
+脚本功能：解锁夏时VIP节点
+使用声明：⚠️仅供学习交流，🈲️商业用途
+
+
+[rewrite_local]
+
+^https?://43.153.65.5/addressx5/index.html url script-response-body https://raw.githubusercontent.com/Guding88/Loon/main/xsvpn/xsvpn.js
+^https?://43.153.98.179/addressx5/index.html url script-response-body https://raw.githubusercontent.com/Guding88/Loon/main/xsvpn/xsvpn.js
+^https?://43.153.8.115/addressx5/index.html url script-response-body https://raw.githubusercontent.com/Guding88/Loon/main/xsvpn/xsvpn.js
+^https?://xiashk.com/addressx5 url script-response-body https://raw.githubusercontent.com/Guding88/Loon/main/xsvpn/xsvpn.js
+
+[MITM]
+hostname = 43.153.65.5,43.153.98.179,43.153.8.115,xiashk.com
+**********************************************/
+
+
 var body = $response.body;
 
 var modifiedBody = {
