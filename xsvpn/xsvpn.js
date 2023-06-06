@@ -1,4 +1,4 @@
 var response = $response.body; 
-var modifiedResponse = response.replace(/"vip":"1"/g, '"vip":"0"'); 
+var modifiedResponse = response.replace(/1/g, "0"); 
 
 $done({ body: modifiedResponse }); 
