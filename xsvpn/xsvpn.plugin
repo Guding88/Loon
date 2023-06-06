@@ -8,30 +8,11 @@
 #!homepage = https://github.com/Guding88/Loon/tree/main/xsvpn
 #!icon = https://raw.githubusercontent.com/Guding88/iCon/main/xsvpn.png
 
-
-http-response ^https?://43.153.65.5/addressx5/index.html script-path=https://raw.githubusercontent.com/Guding88/Loon/main/xsvpn/xsvpn.js, requires-body=true, timeout=10, tag=xsvpn
-http-response ^https?://43.153.98.179/addressx5/index.html script-path=https://raw.githubusercontent.com/Guding88/Loon/main/xsvpn/xsvpn.js, requires-body=true, timeout=10, tag=xsvpn
-http-response ^https?://43.153.8.115/addressx5/index.html script-path=https://raw.githubusercontent.com/Guding88/Loon/main/xsvpn/xsvpn.js, requires-body=true, timeout=10, tag=xsvpn
-http-response ^https?://xiashk.com/addressx5 script-path=https://raw.githubusercontent.com/Guding88/Loon/main/xsvpn/xsvpn.js, requires-body=true, timeout=10, tag=xsvpn
-http-response ^https?://xsserve.com/addressx5 script-path=https://raw.githubusercontent.com/Guding88/Loon/main/xsvpn/xsvpn.js, requires-body=true, timeout=10, tag=xsvpn
-
-^https?://43.153.65.5/addressx5/index.html url script-response-body https://raw.githubusercontent.com/Guding88/Loon/main/xsvpn/xsvpn.js
-^https?://43.153.98.179/addressx5/index.html url script-response-body https://raw.githubusercontent.com/Guding88/Loon/main/xsvpn/xsvpn.js
-^https?://43.153.8.115/addressx5/index.html url script-response-body https://raw.githubusercontent.com/Guding88/Loon/main/xsvpn/xsvpn.js
-^https?://xiashk.com/addressx5 url script-response-body https://raw.githubusercontent.com/Guding88/Loon/main/xsvpn/xsvpn.js
-^https?://xsserve.com/addressx5 url script-response-body https://raw.githubusercontent.com/Guding88/Loon/main/xsvpn/xsvpn.js
-
 [Script]
-
-
 http-response ^https?://(xsserve.com|43.153.65.5|43.153.98.179|43.153.8.115|xiashk.com)/addressx5 script-path=https://raw.githubusercontent.com/Guding88/Loon/main/xsvpn/xsvpn.js, requires-body=true, timeout=10, tag=xsvpn
 
 
-
 [rewrite_local]
-
-
-
 ^https?://(xsserve.com|43.153.65.5|43.153.98.179|43.153.8.115|xiashk.com)/addressx5 url script-response-body https://raw.githubusercontent.com/Guding88/Loon/main/xsvpn/xsvpn.js
 
 [MITM]
