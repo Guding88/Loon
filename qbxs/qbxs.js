@@ -1,4 +1,5 @@
 var guding = JSON.parse($response.body);
+console.log($response.body);
 
 guding.data["bookCoins"] = 99999;
 guding.data["rechargeCoins"] = 99999;
