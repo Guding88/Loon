@@ -1,4 +1,6 @@
-let body = {
+let Guding = JSON.parse($response.body);
+
+Guding = {
   "request_date": "2023-06-07T03:44:05Z",
   "request_date_ms": 1686109445655,
   "subscriber": {
@@ -37,4 +39,4 @@ let body = {
   }
 };
 
-$done({ body: JSON.stringify(body) });
+$done({ body: JSON.stringify(Guding) });
