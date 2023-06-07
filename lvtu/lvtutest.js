@@ -1,5 +1,5 @@
 var guding = JSON.parse($response.body);
-console.log($response.body);
+console.log(guding);
 
 guding.data["userId"] = "1";
 guding.data["identityType"] = 1;
