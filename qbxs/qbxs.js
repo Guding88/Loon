@@ -1,16 +1,27 @@
-var guding = JSON.parse($response.body);
-console.log($response.body);
+let guding = JSON.parse($response.body);
+guding = {
+  
+    "errcode": 0,
+    "errmsg": "success",
+    "data": {
+      
+        "uid": 127539345,
+        "bookCoins": 555,
+        "rechargeCoins": 555,
+        "rechargeCount": 555,
+        "vipRechargeCount": 5,
+        "vipRechargeMoney": 5,
+        "consumeCoins": 5,
+        "consumeCount": 5,
+        "bdConsumeCount": 5,
+        "paymentUser": true,
+        "freeUser": 0,
+        "createdOn": 1686126799000,
+        "modifiedOn": 1686126799000,
+        "isVip": true
+    }
+}
+  
 
-guding.data["bookCoins"] = 99999;
-guding.data["rechargeCoins"] = 99999;
-guding.data["rechargeCount"] = 999;
-guding.data["vipRechargeCount"] = 999;
-guding.data["vipRechargeMoney"] = 9999;
-guding.data["consumeCoins"] = 9999;
-guding.data["consumeCount"] = 999;
-guding.data["bdConsumeCount"] = 999;
-guding.data["paymentUser"] = true;
-guding.data["freeUser"] = 99;
-guding.data["isVip"] = true;
 
 $done({ body: JSON.stringify(guding) });
