@@ -10,4 +10,4 @@ guding.content["userName"] = "骨钉";
 
 
 $done({ body: JSON.stringify(guding) });
-console.log($response.body);
+
