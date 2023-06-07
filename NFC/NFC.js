@@ -1,126 +1,21 @@
-let guding = JSON.parse($response.body);
+var guding = JSON.parse($response.body);
 
-guding = ｛
+guding.user_products = 
 
-{
-    "success": true,
-    "data": {
-        "timestamp": 1686152346,
-        "uid": "QON_adaadc330fa24a4f9d2ebd8f103763d0",
-        "products": [{
-            "id": "unlimited_monthly",
-            "store_id": "de.nicolostanciu.nfcing.unlimited.monthly",
-            "type": 0,
-            "duration": 1
-        }, {
+
+        {
             "id": "unlimited_yearly",
             "store_id": "de.nicolostanciu.nfcing.unlimited.yearly",
             "type": 0,
             "duration": 4
-        }, {
-            "id": "appicon_dark_rainbow",
-            "store_id": "de.nicolostanciu.nfcing.appicon.dark.rainbow",
-            "type": 2,
-            "duration": null
-        }, {
-            "id": "appicon_gold",
-            "store_id": "de.nicolostanciu.nfcing.appicon.gold",
-            "type": 2,
-            "duration": null
-        }, {
-            "id": "appicon_hacker_green",
-            "store_id": "de.nicolostanciu.nfcing.appicon.hackergreen",
-            "type": 2,
-            "duration": null
-        }, {
-            "id": "appicon_rainbow",
-            "store_id": "de.nicolostanciu.nfcing.appicon.rainbow1",
-            "type": 2,
-            "duration": null
-        }, {
-            "id": "appicon_rastafari",
-            "store_id": "de.nicolostanciu.nfcing.appicon.rastafari",
-            "type": 2,
-            "duration": null
-        }, {
-            "id": "appicon_ruby",
-            "store_id": "de.nicolostanciu.nfcing.appicon.ruby",
-            "type": 2,
-            "duration": null
-        }, {
-            "id": "speech_synthesizer",
-            "store_id": "de.nicolostanciu.nfcing.speechsynthesizer1",
-            "type": 2,
-            "duration": null
-        }, {
-            "id": "theme_englishgreen",
-            "store_id": "de.nicolostanciu.nfcing.theme.englishGreen",
-            "type": 2,
-            "duration": null
-        }, {
-            "id": "theme_gold",
-            "store_id": "de.nicolostanciu.nfcing.theme.gold",
-            "type": 2,
-            "duration": null
-        }, {
-            "id": "theme_hackergreen",
-            "store_id": "de.nicolostanciu.nfcing.theme.hackerGreen",
-            "type": 2,
-            "duration": null
-        }, {
-            "id": "theme_horsered",
-            "store_id": "de.nicolostanciu.nfcing.theme.italianHorseRed",
-            "type": 2,
-            "duration": null
-        }, {
-            "id": "theme_purplehaze",
-            "store_id": "de.nicolostanciu.nfcing.theme.purpleHaze",
-            "type": 2,
-            "duration": null
-        }, {
-            "id": "unlimited_pdf_pages",
-            "store_id": "de.nicolostanciu.nfcing.pdf.export",
-            "type": 2,
-            "duration": null
-        }, {
-            "id": "unlimited_qr_widgets",
-            "store_id": "de.nicolostanciu.nfcing.unlimitedWidgets",
-            "type": 2,
-            "duration": null
-        }, {
-            "id": "ad_free",
-            "store_id": "de.nicolostanciu.nfcing.adfree",
-            "type": 2,
-            "duration": null
-        }, {
-            "id": "unlimited_yearly_discounted",
-            "store_id": "de.nicolostanciu.nfcing.unlimited.yearly.discounted.fixed",
-            "type": 1,
-            "duration": 4
-        }, {
-            "id": "unlimited_monthly_discounted",
-            "store_id": "de.nicolostanciu.nfcing.unlimited.monthly.discounted",
-            "type": 1,
-            "duration": 1
-        }, {
-            "id": "unlimited_lifetime",
-            "store_id": "de.nicolostanciu.nfcing.unlimited.lifetime",
-            "type": 2,
-            "duration": null
-        }],
-        "user_products": [{
-            "id": "unlimited_yearly",
-            "store_id": "de.nicolostanciu.nfcing.unlimited.yearly",
-            "type": 0,
-            "duration": 4
-        }],
-        "permissions": [{
+        };
+guding.permissions = [{
             "id": "permission_webhook",
             "active": 1,
             "renew_state": 1,
             "associated_product": "unlimited_yearly",
             "started_timestamp": 1686152308,
-            "expiration_timestamp": 1686411508,
+            "expiration_timestamp": 9686411508,
             "current_period_type": "trial",
             "source": "appstore"
         }, {
@@ -129,7 +24,7 @@ guding = ｛
             "renew_state": 1,
             "associated_product": "unlimited_yearly",
             "started_timestamp": 1686152308,
-            "expiration_timestamp": 1686411508,
+            "expiration_timestamp": 9686411508,
             "current_period_type": "trial",
             "source": "appstore"
         }, {
@@ -138,7 +33,7 @@ guding = ｛
             "renew_state": 1,
             "associated_product": "unlimited_yearly",
             "started_timestamp": 1686152308,
-            "expiration_timestamp": 1686411508,
+            "expiration_timestamp": 9686411508,
             "current_period_type": "trial",
             "source": "appstore"
         }, {
@@ -147,7 +42,7 @@ guding = ｛
             "renew_state": 1,
             "associated_product": "unlimited_yearly",
             "started_timestamp": 1686152308,
-            "expiration_timestamp": 1686411508,
+            "expiration_timestamp": 9686411508,
             "current_period_type": "trial",
             "source": "appstore"
         }, {
@@ -156,7 +51,7 @@ guding = ｛
             "renew_state": 1,
             "associated_product": "unlimited_yearly",
             "started_timestamp": 1686152308,
-            "expiration_timestamp": 1686411508,
+            "expiration_timestamp": 9686411508,
             "current_period_type": "trial",
             "source": "appstore"
         }, {
@@ -165,7 +60,7 @@ guding = ｛
             "renew_state": 1,
             "associated_product": "unlimited_yearly",
             "started_timestamp": 1686152308,
-            "expiration_timestamp": 1686411508,
+            "expiration_timestamp": 9686411508,
             "current_period_type": "trial",
             "source": "appstore"
         }, {
@@ -174,7 +69,7 @@ guding = ｛
             "renew_state": 1,
             "associated_product": "unlimited_yearly",
             "started_timestamp": 1686152308,
-            "expiration_timestamp": 1686411508,
+            "expiration_timestamp": 9686411508,
             "current_period_type": "trial",
             "source": "appstore"
         }, {
@@ -183,7 +78,7 @@ guding = ｛
             "renew_state": 1,
             "associated_product": "unlimited_yearly",
             "started_timestamp": 1686152308,
-            "expiration_timestamp": 1686411508,
+            "expiration_timestamp": 9686411508,
             "current_period_type": "trial",
             "source": "appstore"
         }, {
@@ -192,7 +87,7 @@ guding = ｛
             "renew_state": 1,
             "associated_product": "unlimited_yearly",
             "started_timestamp": 1686152308,
-            "expiration_timestamp": 1686411508,
+            "expiration_timestamp": 9686411508,
             "current_period_type": "trial",
             "source": "appstore"
         }, {
@@ -201,7 +96,7 @@ guding = ｛
             "renew_state": 1,
             "associated_product": "unlimited_yearly",
             "started_timestamp": 1686152308,
-            "expiration_timestamp": 1686411508,
+            "expiration_timestamp": 9686411508,
             "current_period_type": "trial",
             "source": "appstore"
         }, {
@@ -210,7 +105,7 @@ guding = ｛
             "renew_state": 1,
             "associated_product": "unlimited_yearly",
             "started_timestamp": 1686152308,
-            "expiration_timestamp": 1686411508,
+            "expiration_timestamp": 9686411508,
             "current_period_type": "trial",
             "source": "appstore"
         }, {
@@ -219,7 +114,7 @@ guding = ｛
             "renew_state": 1,
             "associated_product": "unlimited_yearly",
             "started_timestamp": 1686152308,
-            "expiration_timestamp": 1686411508,
+            "expiration_timestamp": 9686411508,
             "current_period_type": "trial",
             "source": "appstore"
         }, {
@@ -228,7 +123,7 @@ guding = ｛
             "renew_state": 1,
             "associated_product": "unlimited_yearly",
             "started_timestamp": 1686152308,
-            "expiration_timestamp": 1686411508,
+            "expiration_timestamp": 9686411508,
             "current_period_type": "trial",
             "source": "appstore"
         }, {
@@ -237,7 +132,7 @@ guding = ｛
             "renew_state": 1,
             "associated_product": "unlimited_yearly",
             "started_timestamp": 1686152308,
-            "expiration_timestamp": 1686411508,
+            "expiration_timestamp": 9686411508,
             "current_period_type": "trial",
             "source": "appstore"
         }, {
@@ -246,7 +141,7 @@ guding = ｛
             "renew_state": 1,
             "associated_product": "unlimited_yearly",
             "started_timestamp": 1686152308,
-            "expiration_timestamp": 1686411508,
+            "expiration_timestamp": 9686411508,
             "current_period_type": "trial",
             "source": "appstore"
         }, {
@@ -254,8 +149,8 @@ guding = ｛
             "active": 1,
             "renew_state": 1,
             "associated_product": "unlimited_yearly",
-            "started_timestamp": 1686152308,
-            "expiration_timestamp": 1686411508,
+            ",
+            "expiration_timestamp": 9686411508,
             "current_period_type": "trial",
             "source": "appstore"
         }, {
@@ -264,48 +159,15 @@ guding = ｛
             "renew_state": 1,
             "associated_product": "unlimited_yearly",
             "started_timestamp": 1686152308,
-            "expiration_timestamp": 1686411508,
+            "expiration_timestamp": 9686411508,
             "current_period_type": "trial",
             "source": "appstore"
         }],
-        "offerings": [{
-            "id": "main",
-            "tag": 1,
-            "products": [{
-                "id": "unlimited_yearly",
-                "store_id": "de.nicolostanciu.nfcing.unlimited.yearly",
-                "type": 0,
-                "duration": 4
-            }, {
-                "id": "unlimited_monthly",
-                "store_id": "de.nicolostanciu.nfcing.unlimited.monthly",
-                "type": 0,
-                "duration": 1
-            }, {
-                "id": "unlimited_lifetime",
-                "store_id": "de.nicolostanciu.nfcing.unlimited.lifetime",
-                "type": 2,
-                "duration": null
-            }]
-        }, {
-            "id": "discount",
-            "tag": 0,
-            "products": [{
-                "id": "unlimited_yearly_discounted",
-                "store_id": "de.nicolostanciu.nfcing.unlimited.yearly.discounted.fixed",
-                "type": 1,
-                "duration": 4
-            }, {
-                "id": "unlimited_monthly_discounted",
-                "store_id": "de.nicolostanciu.nfcing.unlimited.monthly.discounted",
-                "type": 1,
-                "duration": 1
-            }]
-        }],
-        "apple_extra": {
+      
+guding.apple_extra = {
             "original_application_version": "1"
         },
-        "products_permissions": {
+guding.products_permissions = {
             "unlimited_monthly": ["permission_unlimited_qr_code_widgets", "permission_unlimited_pdf_pages", "permission_webhook", "permission_ad_free", "permission_appicon_dark_rainbow", "permission_appicon_gold", "permission_appicon_hackergreen", "permission_appicon_rainbow", "permission_appicon_rastafari", "permission_appicon_ruby", "permission_speech_synthesizer", "permission_theme_englishgreen", "permission_theme_gold", "permission_theme_hackergreen", "permission_theme_horsered", "permission_theme_purplehaze", "permission_unlimited"],
             "unlimited_yearly": ["permission_unlimited_qr_code_widgets", "permission_unlimited_pdf_pages", "permission_webhook", "permission_ad_free", "permission_appicon_dark_rainbow", "permission_appicon_gold", "permission_appicon_hackergreen", "permission_appicon_rainbow", "permission_appicon_rastafari", "permission_appicon_ruby", "permission_speech_synthesizer", "permission_theme_englishgreen", "permission_theme_gold", "permission_theme_hackergreen", "permission_theme_horsered", "permission_theme_purplehaze", "permission_unlimited"],
             "appicon_dark_rainbow": ["permission_appicon_dark_rainbow"],
@@ -326,11 +188,6 @@ guding = ｛
             "unlimited_yearly_discounted": ["permission_webhook", "permission_unlimited_pdf_pages", "permission_unlimited_qr_code_widgets", "permission_ad_free", "permission_appicon_dark_rainbow", "permission_appicon_gold", "permission_appicon_hackergreen", "permission_appicon_rainbow", "permission_appicon_rastafari", "permission_appicon_ruby", "permission_speech_synthesizer", "permission_theme_englishgreen", "permission_theme_gold", "permission_theme_hackergreen", "permission_theme_horsered", "permission_theme_purplehaze", "permission_unlimited"],
             "unlimited_monthly_discounted": ["permission_webhook", "permission_unlimited_pdf_pages", "permission_unlimited_qr_code_widgets", "permission_ad_free", "permission_appicon_dark_rainbow", "permission_appicon_gold", "permission_appicon_hackergreen", "permission_appicon_rainbow", "permission_appicon_rastafari", "permission_appicon_ruby", "permission_speech_synthesizer", "permission_theme_englishgreen", "permission_theme_gold", "permission_theme_hackergreen", "permission_theme_horsered", "permission_theme_purplehaze", "permission_unlimited"],
             "unlimited_lifetime": ["permission_unlimited", "permission_webhook", "permission_unlimited_pdf_pages", "permission_unlimited_qr_code_widgets", "permission_ad_free", "permission_appicon_dark_rainbow", "permission_appicon_gold", "permission_appicon_hackergreen", "permission_appicon_rainbow", "permission_appicon_rastafari", "permission_appicon_ruby", "permission_speech_synthesizer", "permission_theme_englishgreen", "permission_theme_gold", "permission_theme_hackergreen", "permission_theme_horsered", "permission_theme_purplehaze"]
-        }
-    }
-}
-
-
 
 ｝
 
