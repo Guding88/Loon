@@ -8,8 +8,8 @@ guding.data["vipRechargeMoney"] = 9999;
 guding.data["consumeCoins"] = 9999;
 guding.data["consumeCount"] = 999;
 guding.data["bdConsumeCount"] = 999;
-guding.data["paymentUser"] = ture;
+guding.data["paymentUser"] = true;
 guding.data["freeUser"] = 99;
-guding.data["isVip"] = ture;
+guding.data["isVip"] = true;
 
 $done({ body: JSON.stringify(guding) });
