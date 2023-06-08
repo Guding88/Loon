@@ -1,0 +1,16 @@
+#!name = NFC
+#!desc = 解锁订阅
+#!openUrl = 
+#!author = Guding
+#!homepage = https://github.com/Guding88/Loon/tree/main/NFC
+#!icon = https://raw.githubusercontent.com/Guding88/iCon/main/laihua.png
+
+
+[Script]
+http-response ^https?://api.qonversion.io/v1/user/init script-path=https://raw.githubusercontent.com/Guding88/Loon/main/NFC/NFC.js, requires-body=true, timeout=10, tag=NFC
+
+[rewrite_local]
+^https?://api.qonversion.io/v1/user/init url script-response-body https://raw.githubusercontent.com/Guding88/Loon/main/NFC/NFC.js
+
+[MITM]
+hostname = api.qonversion.io
