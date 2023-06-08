@@ -1,0 +1,16 @@
+#!name = 网易有道词典
+#!desc = 解锁超级会员
+#!openUrl = https://raw.githubusercontent.com/jizhi0520/QX/main/wyydcd.js
+#!author = 是豆豆呀
+#!homepage = 
+#!icon = https://raw.githubusercontent.com/Guding88/iCon/main/png/wyydcd.png
+
+
+[Script]
+http-response ^https:\/\/dict\.youdao\.com\/vip\/user\/status script-path=https://raw.githubusercontent.com/jizhi0520/QX/main/wyydcd.js, requires-body=true, timeout=10, tag=网易有道词典
+
+[rewrite_local]
+^https:\/\/dict\.youdao\.com\/vip\/user\/status url script-response-body https://raw.githubusercontent.com/jizhi0520/QX/main/wyydcd.js
+ 
+[MITM]
+hostname = dict.youdao.com
