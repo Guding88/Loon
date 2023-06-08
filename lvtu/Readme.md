@@ -1,4 +1,6 @@
 
 改自：https://raw.githubusercontent.com/jizhi0520/QX/main/ltsst.js
 
-原脚本未添加UID，新版APP中不生效，修改为Loon插件
+原脚本未添加UID，导致不生效
+
+修改为Loon插件
