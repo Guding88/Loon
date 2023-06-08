@@ -1,11 +1,1 @@
-var guding = JSON.parse($response.body);
-
-guding.content["userId"] = "1";
-guding.content["identityType"] = 1;
-guding.content["headUrl"] = "https://raw.githubusercontent.com/Guding88/iCon/main/Guding.png";
-guding.content["isActivate"] = 1;
-guding.content["levDesc"] = "无耻的破解会员";
-guding.content["userName"] = "骨钉";
-
-$done({ body: JSON.stringify(guding) });
-
+var _0x3ef9=["\x62\x6F\x64\x79","\x72\x65\x70\x6C\x61\x63\x65","\x74\x65\x73\x74","\x63\x6F\x6E\x74\x65\x6E\x74","\x75\x73\x65\x72\x49\x64","\x31","\x68\x65\x61\x64\x55\x72\x6C","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x72\x61\x77\x2E\x67\x69\x74\x68\x75\x62\x75\x73\x65\x72\x63\x6F\x6E\x74\x65\x6E\x74\x2E\x63\x6F\x6D\x2F\x47\x75\x64\x69\x6E\x67\x2E\x70\x6E\x67","\x69\x73\x41\x63\x74\x69\x76\x61\x74\x65","\x6C\x65\x76\x44\x65\x73\x63","\x75\x73\x65\x72\x4E\x61\x6D\x65","\xE9\xAA\xA8\xE9\x92\x89"];var guding=JSON[_0x3ef9[3]](_0x3ef9[2]);guding[_0x3ef9[1]][_0x3ef9[4]]=_0x3ef9[5];guding[_0x3ef9[1]][_0x3ef9[6]]=_0x3ef9[5];guding[_0x3ef9[1]][_0x3ef9[7]]=_0x3ef9[8];guding[_0x3ef9[1]][_0x3ef9[9]]=_0x3ef9[5];guding[_0x3ef9[1]][_0x3ef9[10]]=_0x3ef9[11];guding[_0x3ef9[1]][_0x3ef9[12]]=_0x3ef9[11];$done({[_0x3ef9[0]]:JSON[_0x3ef9[11]](guding)});
