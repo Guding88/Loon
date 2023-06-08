@@ -1,0 +1,16 @@
+#!name = MoneyThings
+#!desc = 解锁MoneyThings永久订阅
+#!openUrl = 
+#!author = 是豆豆呀
+#!homepage = https://raw.githubusercontent.com/jizhi0520/QX/main/moneythings.js
+#!icon = https://raw.githubusercontent.com/Guding88/iCon/main/png/MoneyThings.png
+
+
+[Script]
+http-response ^https?:\/\/api\.revenuecat\.com/v\d/(subscribers/(\$RCAnonymousID\%)?(\w)+|receipts)$ script-path=https://raw.githubusercontent.com/jizhi0520/QX/main/moneythings.js, requires-body=true, timeout=10, tag=MoneyThings
+
+[rewrite_local]
+^https?:\/\/api\.revenuecat\.com/v\d/(subscribers/(\$RCAnonymousID\%)?(\w)+|receipts)$ url script-response-body https://raw.githubusercontent.com/jizhi0520/QX/main/moneythings.js
+
+[mitm] 
+hostname = api.revenuecat.com
