@@ -1,0 +1,16 @@
+#!name = 冥想星球
+#!desc = 解锁冥想模块全部内容
+#!openUrl = 
+#!author = Guding
+#!homepage = https://t.me/Guding
+#!icon = https://raw.githubusercontent.com/Guding88/iCon/main/png/mxxq.png
+
+[Script]
+http-response ^https:\/\/kc\.xinli001\.com\/lingxikc\/meditating\/api\/(?!.*plan).* script-path=https://raw.githubusercontent.com/Guding88/Loon/main/mxxq/mxxq.js, requires-body=true, timeout=10, tag=mxxq
+
+
+[rewrite_local]
+^https:\/\/kc\.xinli001\.com\/lingxikc\/meditating\/api\/(?!.*plan).* url script-response-body ttps://raw.githubusercontent.com/Guding88/Loon/main/mxxq/mxxq.js
+
+[MITM]
+hostname = kc.xinli001.com
