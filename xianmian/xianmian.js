@@ -43,7 +43,7 @@ $httpClient.get(request, (error, response, data) => {
       notice2 += notice;
     }
     console.log(notice2);
-    $notification.post("Appraven", "今日限免已送达,点击查看日志👇", notice2);
+    $notification.post("每日限免", "今日限免已送达,请进入脚本日志查看" ,"" );
     $done();
   }
 });
