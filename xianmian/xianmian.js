@@ -27,6 +27,7 @@ $httpClient.get(request, (error, response, data) => {
     var json = data;
     var obj = JSON.parse(json);
     var count = Object.keys(obj).length;
+    var totalCount = 0; // 计数器
     var notice2 = " ";
     for (var i = 0; i < count; i++) {
       var count2 = obj[i].apps.length;
@@ -37,13 +38,18 @@ $httpClient.get(request, (error, response, data) => {
         var original_price = app.last;
         var price = app.price;
         var link = "https://apps.apple.com/us/app/id" + app.application_id;
-        var str = name +": $" + original_price + " --> $" + price + "\n" + link + "\n" + "\n";
+        var str = name + ": $" + original_price + " --> $" + price + "\n" + link + "\n" + "\n";
         notice += str;
+        totalCount++; // 每提取一个 app.app_title，计数器加一
       }
       notice2 += notice;
     }
     console.log(notice2);
-    $notification.post("✔每日限免", "今日限免已送达,请进入脚本日志查看详情" ,"" );
+    $notification.post(
+      "✅每日限免",
+      `今日限免共 ${totalCount} 个,请进入脚本日志查看详情`,
+      ""
+    );
     $done();
   }
 });
