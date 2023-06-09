@@ -1,4 +1,57 @@
+/*
+百度贴吧签到脚本
 
+脚本修改自: https://github.com/sazs34/TaskConfig
+兼容: QuantumultX, Surge4, Loon
+
+获取Cookie说明：
+打开百度贴吧App后(AppStore中国区, 非内部版)，点击"我的", 如通知成功获取cookie, 则可以使用此签到脚本.
+获取Cookie后, 请将Cookie脚本禁用并移除主机名，以免产生不必要的MITM.
+脚本将在每天上午9:00执行, 您可以修改执行时间。
+
+************************
+Surge 4.2.0+ 脚本配置:
+************************
+
+[Script]
+贴吧签到 = type=cron,cronexp=0 9 * * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js
+
+贴吧获取Cookie = type=http-request,pattern=https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js
+
+[MITM] 
+hostname= c.tieba.baidu.com
+
+************************
+QuantumultX 本地脚本配置:
+************************
+
+[task_local]
+# 贴吧签到
+0 9 * * * TieBa.js
+
+[rewrite_local]
+# 获取Cookie
+https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login url script-request-header TieBa.js
+
+[mitm] 
+hostname= c.tieba.baidu.com
+
+************************
+Loon 2.1.0+ 脚本配置:
+************************
+
+[Script]
+# 贴吧签到
+cron "0 9 * * *" script-path=https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js
+
+# 获取Cookie
+http-request https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login script-path=https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js
+
+[Mitm] 
+hostname= c.tieba.baidu.com
+
+
+*/
 var $nobyda = nobyda();
 var cookieVal = $nobyda.read("CookieTB");
 var useParallel = 0; //0自动切换,1串行,2并行(当贴吧数量大于30个以后,并行可能会导致QX崩溃,所以您可以自动切换)
