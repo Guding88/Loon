@@ -42,7 +42,7 @@ Loon 2.1.0+ 脚本配置:
 
 [Script]
 # 贴吧签到
-cron "0 9 * * *" script-path=https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js
+cron "0 0 * * *" script-path=https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js
 
 # 获取Cookie
 http-request https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login script-path=https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js
@@ -54,7 +54,7 @@ hostname= c.tieba.baidu.com
 */
 var $nobyda = nobyda();
 var cookieVal = $nobyda.read("CookieTB");
-var useParallel = 0; //0自动切换,1串行,2并行(当贴吧数量大于30个以后,并行可能会导致QX崩溃,所以您可以自动切换)
+var useParallel = 2; //0自动切换,1串行,2并行(当贴吧数量大于30个以后,并行可能会导致QX崩溃,所以您可以自动切换)
 var singleNotifyCount = 2000; //想签到几个汇总到一个通知里,这里就填几个(比如我有13个要签到的,这里填了5,就会分三次消息通知过去)
 var process = {
   total: 0,
