@@ -44,7 +44,7 @@ $httpClient.get(request, (error, response, data) => {
       }
       notice2 += notice;
     }
-    console.log(notice2);
+    console.log("今日限免共 ${totalCount} 个,详情如下：" + "\n" + notice2);
     $notification.post(
       "✅每日限免",
       `今日限免共 ${totalCount} 个,请进入脚本日志查看详情`,
