@@ -1,0 +1,16 @@
+#!name = 白噪音和深度睡眠声音
+#!desc = 解锁订阅
+#!openUrl = 
+#!author = Guding
+#!homepage = https://t.me/Guding
+#!icon = https://raw.githubusercontent.com/Guding88/iCon/main/png/sdsmsy.png
+
+
+[Script]
+http-response ^https?://receipt\.deepsleepsounds\.com/api/v1/receipt/processTransaction script-path=https://raw.githubusercontent.com/Guding88/Loon/main/sdsmsy/sdsmsy.js, requires-body=true, timeout=10, tag=深度睡眠声音
+
+[rewrite_local]
+^https?://receipt\.deepsleepsounds\.com/api/v1/receipt/processTransaction url script-response-body https://raw.githubusercontent.com/Guding88/Loon/main/sdsmsy/sdsmsy.js
+
+[MITM]
+hostname = receipt.deepsleepsounds.com
