@@ -7,10 +7,10 @@
 
 
 [Script]
-http-response ^https:\/\/api\.revenuecat\.com\/v1\/subscribers(?!.*offerings).*$ script-path=https://raw.githubusercontent.com/Guding88/Loon/main/cheopiaopiao/chepiaopiao.js, requires-body=true, timeout=10, tag=车票票
+http-response ^https:\/\/api\.revenuecat\.com\/v1\/subscribers(?!.*offerings).*$ script-path=https://raw.githubusercontent.com/Guding88/Loon/main/chepiaopiao/chepiaopiao.js, requires-body=true, timeout=10, tag=车票票
 
 [rewrite_local]
-^https:\/\/api\.revenuecat\.com\/v1\/subscribers(?!.*offerings).*$ url script-response-body https://raw.githubusercontent.com/Guding88/Loon/main/cheopiaopiao/chepiaopiao.js
+^https:\/\/api\.revenuecat\.com\/v1\/subscribers(?!.*offerings).*$ url script-response-body https://raw.githubusercontent.com/Guding88/Loon/main/chepiaopiao/chepiaopiao.js
 
 [MITM]
 hostname = api.revenuecat.com
