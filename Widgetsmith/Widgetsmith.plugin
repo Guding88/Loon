@@ -1,0 +1,16 @@
+#!name = Widgetsmith
+#!desc = 解锁订阅
+#!openUrl = 
+#!author = Guding
+#!homepage = https://t.me/Guding
+#!icon = https://raw.githubusercontent.com/Guding88/iCon/main/png/Widgetsmith.png
+
+
+[Script]
+http-response ^https:\/\/api\.revenuecat\.com\/v1\/subscribers(?!.*offerings).*$ script-path=https://raw.githubusercontent.com/Guding88/Loon/main/Widgetsmith/Widgetsmith.js, requires-body=true, timeout=10, tag=Widgetsmith
+
+[rewrite_local]
+^https:\/\/api\.revenuecat\.com\/v1\/subscribers(?!.*offerings).*$ url script-response-body https://raw.githubusercontent.com/Guding88/Loon/main/Widgetsmith/Widgetsmith.js
+
+[MITM]
+hostname = api.revenuecat.com
