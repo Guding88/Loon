@@ -1,0 +1,16 @@
+#!name = PhotoRoom
+#!desc = 解锁高级订阅
+#!openUrl = 
+#!author = Guding
+#!homepage = https://t.me/Guding
+#!icon = https://raw.githubusercontent.com/Guding88/iCon/main/png/PhotoRoom.png
+
+
+[Script]
+http-response ^https?:\/\/api\.revenuecat\.com\/v1\/subscribers\/[^\/]+$ script-path=https://raw.githubusercontent.com/Guding88/Loon/main/PhotoRoom/PhotoRoom.js, requires-body=true, timeout=10, tag=PhotoRoom
+
+[rewrite_local]
+^https?:\/\/api\.revenuecat\.com\/v1\/subscribers\/[^\/]+$ url script-response-body https://raw.githubusercontent.com/Guding88/Loon/main/PhotoRoom/PhotoRoom.js
+
+[MITM]
+hostname = api.revenuecat.com
