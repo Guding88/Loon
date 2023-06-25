@@ -1,0 +1,16 @@
+#!name = LeapVPN
+#!desc = 解锁VIP
+#!openUrl = 
+#!author = Guding
+#!homepage = https://github.com/Guding88/Loon
+#!icon = https://raw.githubusercontent.com/Guding88/iCon/main/png/LeapVPN.png
+
+
+[Script]
+http-response ^https?:\/\/api\.leapmobile\.cloud\/users script-path=https://raw.githubusercontent.com/Guding88/Loon/main/LeapVPN/LeapVPN.js, requires-body=true, timeout=10, tag=LeapVPN
+
+[rewrite_local]
+^https?:\/\/api\.leapmobile\.cloud\/users url script-response-body https://raw.githubusercontent.com/Guding88/Loon/main/LeapVPN/LeapVPN.js
+
+[MITM]
+hostname = api.leapmobile.cloud
