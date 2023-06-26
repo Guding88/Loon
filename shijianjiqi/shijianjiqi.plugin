@@ -7,7 +7,7 @@
 
 
 [Script]
-http-response ^https?:\/\/api\.revenuecat\.com\/v1\/subscribers\/[^\/]+$ script-path=https://raw.githubusercontent.com/Guding88/Loon/main/shijianjiqi/shijianjiqi.js, requires-body=true， timeout=10， tag=时间机器
+http-response ^https?:\/\/api\.revenuecat\.com\/v1\/subscribers\/[^\/]+$ script-path=https://raw.githubusercontent.com/Guding88/Loon/main/shijianjiqi/shijianjiqi.js, requires-body=true, timeout=10, tag=时间机器
 
 [rewrite_local]
 ^https?:\/\/api\.revenuecat\.com\/v1\/subscribers\/[^\/]+$ url script-response-body https://raw.githubusercontent.com/Guding88/Loon/main/shijianjiqi/shijianjiqi.js
